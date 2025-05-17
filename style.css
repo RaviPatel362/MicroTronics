@@ -406,7 +406,7 @@ br {
 }
 
 .circle:nth-child(3) {
-  background-color: #bbcae0;
+  background-color: #e0bbc9;
   z-index: 1;
   width: 250px;
   height: 250px;
@@ -1738,6 +1738,10 @@ br {
 @media screen and (max-width: 560px) {
   .section_container {
     padding: 3rem;
+  }
+
+  .circle_text {
+    font-size: 1.5rem;
   }
 
   .home_heading,
