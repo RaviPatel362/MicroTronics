@@ -1268,6 +1268,14 @@ br {
     padding: 2rem 0;
   }
 
+  .aboutus_section .left_container {
+    min-height: 100% !important;
+  }
+
+  .aboutus_section .right_container {
+    min-height: 100% !important;
+  }
+
   .aboutus_section .section_footer {
     position: relative;
     padding: 6rem 0 2rem 0;
@@ -1301,6 +1309,14 @@ br {
   ::before,
   ::after {
     font-size: 8px;
+  }
+
+  .left_container {
+    min-height: 100% !important;
+  }
+
+  .right_container {
+    min-height: 100% !important;
   }
 
   .our_goals_left_section,
