@@ -62,10 +62,6 @@ html {
   display: none;
 }
 
-.agenda_section .section_footer {
-  justify-content: flex-end;
-}
-
 .agenda_section {
   margin-top: 0;
   height: 100vh !important;
@@ -1685,9 +1681,10 @@ br {
         rgba(255, 255, 255, 0.9)),
       center / cover url("./img/common_background.png");
     background-repeat: no-repeat;
-    height: 100%;
+    height: calc(100vh - 55px) !important;
     gap: 1.8rem;
     padding: 2rem 0;
+    justify-content: space-evenly;
   }
 
   .agenda_top_container,
