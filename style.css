@@ -513,6 +513,7 @@ br {
 
 .aboutus_section .right_container {
   position: relative;
+  height: 100vh;
 }
 
 .aboutus_paragraph_box {
@@ -674,7 +675,7 @@ br {
 .detail_container,
 .connect_heading,
 .contact_sub_heading {
-  width: 60%;
+  width: 620px;
 }
 
 .detail_item {
@@ -1134,6 +1135,23 @@ br {
   }
 }
 
+@media screen and (max-width: 1390px) {
+
+  .aboutus_section .left_container,
+  .aboutus_paragraph_box {
+    gap: 1rem;
+  }
+
+  .detail_img_con {
+    width: 60px;
+    height: 60px;
+  }
+
+  .detail_logo {
+    width: 20px;
+  }
+}
+
 @media screen and (max-width : 1260px) {
 
   *,
@@ -1143,7 +1161,6 @@ br {
     font-size: 9px;
   }
 
-  .connect_heading,
   .contact_form_input,
   .contact_form_textarea,
   .contact_sub_heading {
@@ -1177,8 +1194,8 @@ br {
   .detail_container,
   .connect_heading,
   .contact_sub_heading {
-    width: 90%;
-    margin-left: 4rem;
+    width: 450px;
+    margin-left: 8rem;
   }
 
   .market_heading {
@@ -1220,7 +1237,6 @@ br {
     padding: 00.65rem !important;
   }
 
-  .connect_heading,
   .contact_form_input,
   .contact_form_textarea,
   .contact_sub_heading {
@@ -1252,6 +1268,7 @@ br {
 
   .aboutus_section .right_container {
     padding: 4rem 0;
+    height: auto;
   }
 
   .aboutus_section .right_container {
@@ -1588,7 +1605,6 @@ br {
   .connect_heading,
   .contact_sub_heading {
     width: auto;
-    margin-left: 0;
   }
 
   .expertise_section,
@@ -1785,8 +1801,7 @@ br {
   .mission_paragraph,
   .vision_paragraph,
   .market_paragraph,
-  .aboutus_paragraph,
-  .services_paragraph {
+  .aboutus_paragraph {
     width: 100%;
     margin-left: 0rem;
   }
