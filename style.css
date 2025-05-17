@@ -592,6 +592,8 @@ br {
 
 .expertise_heading,
 .expertise_heading span,
+.services_heading span,
+.products_heading span,
 .products_heading,
 .services_heading,
 .our_goals_heading,
@@ -1641,20 +1643,15 @@ br {
   .expertise_heading,
   .services_heading,
   .products_heading {
-    color: #000;
-    width: auto;
-    white-space: unset;
-    text-align: center;
-  }
-
-  .expertise_heading {
     color: var(--secondary-text-color);
     width: auto;
     white-space: unset;
     text-align: center;
   }
 
-  .expertise_heading span {
+  .expertise_heading span,
+  .services_heading span,
+  .products_heading span {
     color: var(--main-text-color);
   }
 
