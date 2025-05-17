@@ -1737,7 +1737,7 @@ br {
 
 @media screen and (max-width: 560px) {
   .section_container {
-    padding: 3rem;
+    padding: 1rem;
   }
 
   .circle_text {
