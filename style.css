@@ -82,24 +82,25 @@ html {
 }
 
 .video_top {
-  transform: translate(-40%, -65%) rotate(45deg);
+  transform: translate(-35%, -70%) rotate(45deg);
 }
 
 .video_middle {
-  transform: translate(-78%, -91%) rotate(45deg);
+  transform: translate(-75%, -100%) rotate(45deg);
 }
 
 .video_bottom {
-  transform: translate(-36%, -70%) rotate(-45deg);
+  transform: translate(-33.5%, -78%) rotate(-45deg);
 }
 
 .home_screen_logo {
-  width: 30%;
+  width: 470px;
   position: absolute;
   z-index: 1;
-  top: -15%;
-  left: 0;
-  transform: rotate(-45deg);
+  top: 140px;
+  left: 100px;
+  transform: translateY(-50%);
+  transition: left 0.2s ease-in;
   animation: homeLogoWidth 0.5s ease-in;
 }
 
@@ -108,7 +109,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100vh;
+  height: calc(100vh - 55px) !important;
   background: linear-gradient(rgba(255, 255, 255, 0.74),
       rgba(255, 255, 255, 0.74)),
     center / cover url("./img/home_background.jpeg");
@@ -1150,6 +1151,10 @@ br {
     gap: 1rem;
   }
 
+  .home_screen_logo {
+    width: 350px;
+  }
+
   .detail_img_con {
     width: 60px;
     height: 60px;
@@ -1167,6 +1172,10 @@ br {
   ::before,
   ::after {
     font-size: 9px;
+  }
+
+  .home_screen_logo {
+    width: 270px;
   }
 
   .contact_form_input,
