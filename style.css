@@ -50,12 +50,11 @@ html {
   width: 220px;
 }
 
-.mission_section .section_footer a,
-.vision_section .section_footer a,
-.contact_section .section_footer a,
-.connect_section .section_footer a,
-.market_section .section_footer a,
-.aboutus_section .section_footer a {
+.section_footer a {
+  color: var(--white);
+}
+
+.market_section .section_footer a {
   color: #000;
 }
 
@@ -731,13 +730,6 @@ br {
   font-weight: 600;
 }
 
-.connect_section,
-.contact_section {
-  background-image: url("./img/connect_background.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 /*Our Goals Page CSS*/
 .ourgoals_section,
 .ourmanagement_section {
@@ -1025,7 +1017,6 @@ br {
   border-radius: 61px;
   opacity: 0.7;
   z-index: 1;
-
 }
 
 .left_container .mission_paragraph,
@@ -1037,6 +1028,50 @@ br {
   z-index: 2;
   color: var(--white);
 }
+
+.contact_section .right_container,
+.connect_section .right_container {
+  position: relative;
+  overflow: hidden;
+  animation: showEaseIn 1.2s ease-in;
+}
+
+.building_container {
+  position: absolute;
+  background: url('./img/connect_right_building.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  right: -110px;
+  z-index: 1;
+  opacity: 0.9;
+
+}
+
+.connect_video_container {
+  background: linear-gradient(to right, rgba(112, 0, 33, 1), rgba(194, 24, 91, 1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 61px;
+  top: 300px;
+  right: -665px;
+  transform: rotate(55deg) scale(1.5) translateY(-50%);
+}
+
+.connect_video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 61px;
+}
+
 
 /* Animation Keyframes */
 @keyframes fadeInLeft {
@@ -1175,7 +1210,22 @@ br {
 
 /*Media Screen Queries*/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1560px) {
+  .connect_video_container {
+    top: 550px;
+  }
+
+  .connect_section .right_container,
+  .contact_section .right_container {
+    width: 55%;
+  }
+
+  .building_container {
+    right: -100px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
   .market_paragraph {
     width: 620px;
   }
@@ -1189,6 +1239,14 @@ br {
     margin-bottom: 2rem;
     justify-content: center;
     padding: 5rem 5rem 2rem;
+  }
+
+  .connect_video_container {
+    top: 350px;
+  }
+
+  .building_container {
+    right: -90px;
   }
 }
 
@@ -1220,6 +1278,14 @@ br {
   ::before,
   ::after {
     font-size: 9px;
+  }
+
+  .connect_video_container {
+    top: 250px;
+  }
+
+  .building_container {
+    right: -75px;
   }
 
   .home_screen_logo {
@@ -1300,6 +1366,14 @@ br {
   .navbar-brand img {
     width: 180px;
   }
+
+  .connect_video_container {
+    top: 200px;
+  }
+
+  .building_container {
+    right: -65px;
+  }
 }
 
 @media screen and (max-width: 1099px) {
@@ -1366,6 +1440,27 @@ br {
   ::before,
   ::after {
     font-size: 8px;
+  }
+
+  .right_container {
+    height: 100%;
+  }
+
+  .contact_section .right_container,
+  .connect_section .right_container {
+    display: none;
+  }
+
+  .contact_section .left_container,
+  .connect_section .left_container {
+    width: 100%;
+  }
+
+  .detail_container,
+  .connect_heading,
+  .contact_sub_heading {
+    margin-left: 0;
+    width: 350px;
   }
 
   .left_container {
