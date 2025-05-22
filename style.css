@@ -1278,6 +1278,10 @@ br {
     gap: 1rem;
   }
 
+  .common_video_container {
+    width: 80%;
+  }
+
   .home_screen_logo {
     width: 350px;
   }
@@ -1388,6 +1392,11 @@ br {
     width: 180px;
   }
 
+  .common_video_container {
+    width: 70%;
+    top: 60%;
+  }
+
   .connect_video_container {
     top: 200px;
   }
@@ -1401,6 +1410,11 @@ br {
   .navbar-expand-lg .navbar-nav .nav-link {
     width: 100%;
     padding: 00.65rem !important;
+  }
+
+  .common_video_container {
+    width: 80%;
+    left: -100%;
   }
 
   .contact_form_input,
@@ -1461,6 +1475,10 @@ br {
   ::before,
   ::after {
     font-size: 8px;
+  }
+
+  .common_video_container {
+    display: none;
   }
 
   .right_container {
