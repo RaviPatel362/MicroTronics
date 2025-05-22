@@ -995,12 +995,23 @@ br {
   overflow: hidden;
 }
 
-.video_container {
+/* .mission_section .left_container .mission_paragraph {
+  height: 100%;
+} */
+
+.left_container .mission_heading,
+.left_container .mission_paragraph,
+.left_container .vision_paragraph,
+.left_container .vision_heading {
+  margin-right: 10rem;
+}
+
+.common_video_container {
   background: linear-gradient(to right, rgba(112, 0, 33, 1), rgba(194, 24, 91, 1));
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   overflow: hidden;
   border-radius: 61px;
@@ -1023,7 +1034,10 @@ br {
 
 .left_container .mission_paragraph,
 .left_container .mission_heading,
-.left_container .mission_heading span {
+.left_container .mission_heading span,
+.left_container .vision_paragraph,
+.left_container .vision_heading,
+.left_container .vision_heading span {
   z-index: 2;
   color: var(--white);
 }
