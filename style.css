@@ -258,6 +258,12 @@ html {
   width: 400px;
 }
 
+.connect_heading,
+.connect_heading span {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
 br {
   display: inline;
 }
@@ -702,11 +708,6 @@ br {
   width: 620px;
 }
 
-.contact_section .connect_heading,
-.contact_section .contact_sub_heading {
-  width: 450px;
-}
-
 .detail_item {
   display: flex;
   flex-direction: row;
@@ -887,13 +888,13 @@ br {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1.2rem;
   align-items: center;
 }
 
 .contact_form_input {
   height: 44px;
-  width: 450px;
+  width: 620px;
   text-align: justify;
   padding: 1rem;
   font-size: 1.8rem;
@@ -901,11 +902,28 @@ br {
   border: 1px solid var(--secondary-text-color);
 }
 
+.contact_form_input_container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.contact_form_input_container .contact_form_input {
+  width: 300px;
+}
+
+.contact_form_file {
+  border: 1px solid var(--secondary-text-color);
+  padding: 10px;
+  width: 610px;
+  border-radius: 5px;
+}
+
 .contact_form_textarea {
   border-radius: 6px;
   padding: 1rem;
-  width: 450px;
-  height: 120px;
+  width: 610px;
+  height: 100px;
   font-size: 1.8rem;
   border: 1px solid var(--secondary-text-color);
 }
@@ -921,13 +939,14 @@ br {
 }
 
 .contact_sub_heading {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .contact_section .left_container {
-  justify-content: center;
-  gap: 3rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 2rem 0
 }
 
 /*Navigation Bar CSS*/
@@ -1093,6 +1112,31 @@ br {
   border-radius: 61px;
 }
 
+.address_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.address_logo {
+  width: 220px;
+}
+
+.address_heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.address_text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: right;
+  margin: 0
+}
 
 /* Animation Keyframes */
 @keyframes fadeInLeft {
@@ -2067,4 +2111,60 @@ br {
     width: min(220px, 85vw);
     height: min(220px, 85vw);
   }
+}
+
+.modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 1rem 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-text-color);
+}
+
+.modal-body p {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem 5rem;
+}
+
+.modal .btn-secondary {
+  background-color: var(--secondary-text-color);
+  border-color: var(--secondary-text-color);
+  font-size: 1.6rem;
+}
+
+.modal .btn-secondary:hover {
+  background-color: var(--main-text-color);
+  border-color: var(--main-text-color);
 }
