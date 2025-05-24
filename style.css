@@ -1236,7 +1236,8 @@ br {
   transition: transform 0.3s ease;
 }
 
-.our_sec_col2:hover .team_img {
+.our_sec_col2:hover .team_img,
+.our_management_right_section:hover .team_img {
   transform: scale(1.05);
 }
 
@@ -1318,7 +1319,11 @@ br {
 
 @media screen and (min-width: 1560px) {
   .connect_video_container {
-    top: 400px;
+    top: 430px;
+  }
+
+  .common_video_container {
+    left: -100%;
   }
 
   .connect_section .right_container,
@@ -1502,7 +1507,7 @@ br {
 
   .common_video_container {
     top: 60%;
-    left: -105%;
+    left: -111%;
   }
 
   .connect_video_container {
@@ -1521,7 +1526,7 @@ br {
   }
 
   .common_video_container {
-    left: -118%;
+    left: -125%;
     top: 63%;
   }
 
