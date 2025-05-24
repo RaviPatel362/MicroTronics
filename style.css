@@ -92,11 +92,11 @@ html {
 }
 
 .video_middle {
-  transform: translate(-75%, -100%) rotate(45deg);
+  transform: translate(-76%, -102%) rotate(45deg);
 }
 
 .video_bottom {
-  transform: translate(-33.5%, -78%) rotate(-45deg);
+  transform: translate(-34.5%, -80%) rotate(-45deg);
 }
 
 .home_screen_logo {
@@ -124,7 +124,7 @@ html {
 
 .home_main_heading {
   margin: 0;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 900;
   color: var(--secondary-text-color);
   position: relative;
@@ -144,7 +144,7 @@ html {
       var(--main-text-color),
       var(--secondary-text-color));
   left: 50%;
-  transform: translateX(-115%);
+  transform: translateX(-100%);
 }
 
 .home_main_heading::before {
@@ -161,6 +161,8 @@ html {
   color: var(--main-text-color);
   text-shadow: 0 0 8px rgba(115, 0, 41, 0.3), 0 0 16px rgba(42, 127, 255, 0.1);
   letter-spacing: 1px;
+  width: 80%;
+  max-width: 100%;
 }
 
 .home_heading_container_item {
@@ -1567,6 +1569,15 @@ br {
   .aboutus_heading {
     text-align: center;
   }
+
+  .home_main_heading::before,
+  .home_main_heading::after {
+    transform: translateX(-90%);
+  }
+
+  .home_main_heading {
+    font-size: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -1952,8 +1963,25 @@ br {
     justify-content: center;
   }
 
+  .home_main_heading {
+    text-align: center;
+  }
+
+  .home_heading {
+    width: 330px;
+  }
+
+  .home_main_heading::after,
+  .home_main_heading::before {
+    transform: translateX(-50%);
+  }
+
+
   .home_heading_container {
     margin-right: 0;
+    width: 450px;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .video_section {
@@ -2103,13 +2131,12 @@ br {
     flex-direction: column;
   }
 
+  .home_main_heading {
+    font-size: 4rem;
+  }
+
   .home_heading_container {
-    width: 370px;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .agenda_section {
@@ -2175,7 +2202,14 @@ br {
     font-size: 1.5rem;
   }
 
-  .home_heading,
+  .home_heading {
+    width: 70%;
+  }
+
+  .home_heading_container_item {
+    justify-content: center;
+  }
+
   .market_heading {
     width: 100%;
     text-align: center;
