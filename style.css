@@ -116,10 +116,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   height: calc(100vh - 55px) !important;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.74),
-      rgba(255, 255, 255, 0.74)
-    ),
+  background: linear-gradient(rgba(255, 255, 255, 0.74),
+      rgba(255, 255, 255, 0.74)),
     center / cover url("./img/home_background.jpeg");
   background-repeat: no-repeat;
 }
@@ -142,11 +140,9 @@ html {
   position: absolute;
   width: 150px;
   height: 4px;
-  background: linear-gradient(
-    to right,
-    var(--main-text-color),
-    var(--secondary-text-color)
-  );
+  background: linear-gradient(to right,
+      var(--main-text-color),
+      var(--secondary-text-color));
   left: 50%;
   transform: translateX(-115%);
 }
@@ -215,10 +211,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ),
+  background: linear-gradient(rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)),
     center / cover url("./img/common_background.png");
   background-repeat: no-repeat;
   animation: showEaseIn 1.2s ease-in;
@@ -226,10 +220,8 @@ html {
 
 .ourgoals_section,
 .ourmanagement_section {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ),
+  background: linear-gradient(rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)),
     center / cover url("./img/common_background.png");
   background-repeat: no-repeat;
 }
@@ -412,11 +404,9 @@ br {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    rgba(244, 244, 244, 0.45),
-    rgba(112, 0, 33, 0.45)
-  );
+  background: linear-gradient(135deg,
+      rgba(244, 244, 244, 0.45),
+      rgba(112, 0, 33, 0.45));
   border-radius: 50%;
 }
 
@@ -573,10 +563,8 @@ br {
 }
 
 .agenda_section {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ),
+  background: linear-gradient(rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)),
     center / cover url("./img/common_background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1040,7 +1028,7 @@ br {
 }
 
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
+.navbar-light .navbar-nav .show>.nav-link {
   color: var(--secondary-text-color);
   font-weight: 700;
 }
@@ -1075,11 +1063,9 @@ br {
 }
 
 .common_video_container {
-  background: linear-gradient(
-    to right,
-    rgba(112, 0, 33, 1),
-    rgba(194, 24, 91, 1)
-  );
+  background: linear-gradient(to right,
+      rgba(112, 0, 33, 1),
+      rgba(194, 24, 91, 1));
   position: absolute;
   top: 0;
   left: 0;
@@ -1136,11 +1122,9 @@ br {
 }
 
 .connect_video_container {
-  background: linear-gradient(
-    to right,
-    rgba(112, 0, 33, 1),
-    rgba(194, 24, 91, 1)
-  );
+  background: linear-gradient(to right,
+      rgba(112, 0, 33, 1),
+      rgba(194, 24, 91, 1));
   position: absolute;
   top: 0;
   left: 0;
@@ -1364,11 +1348,19 @@ br {
   }
 }
 
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .common_video_container {
+    left: -110%;
+  }
+}
+
 @media screen and (max-width: 1390px) {
+
   .aboutus_section .left_container,
   .aboutus_paragraph_box {
     gap: 1rem;
   }
+
   .common_video_container {
     left: -100%;
   }
@@ -1388,6 +1380,7 @@ br {
 }
 
 @media screen and (max-width: 1260px) {
+
   *,
   :root,
   ::before,
@@ -1516,8 +1509,13 @@ br {
   }
 
   .common_video_container {
-    left: -130%;
+    left: -118%;
     top: 63%;
+  }
+
+  .mission_paragraph,
+  .vision_paragraph {
+    width: 350px;
   }
 
   .contact_form_input,
@@ -1572,6 +1570,7 @@ br {
 }
 
 @media screen and (max-width: 990px) {
+
   *,
   :root,
   ::before,
@@ -1685,6 +1684,12 @@ br {
     margin-left: 0;
   }
 
+  .mission_section .left_container,
+  .vision_section .left_container {
+    align-items: flex-start;
+    padding: 0;
+  }
+
   .market_section .left_container,
   .products_section .left_container,
   .services_section .left_container,
@@ -1707,8 +1712,31 @@ br {
     margin-right: 0;
   }
 
-  .mission_heading,
-  .vision_heading {
+  .left_container .mission_heading,
+  .left_container .vision_heading {
+    width: 100%;
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .left_container .mission_heading span,
+  .left_container .vision_heading span {
+    color: var(--main-text-color);
+  }
+
+  .left_container .mission_paragraph,
+  .left_container .vision_paragraph,
+  .right_container .mission_paragraph,
+  .right_container .vision_paragraph {
+    color: #000;
+    width: 350px;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .right_container .vision_heading,
+  .right_container .mission_heading {
     width: auto;
   }
 
@@ -1738,6 +1766,7 @@ br {
     width: 100%;
     position: static;
     padding-top: 2rem;
+    align-items: center;
   }
 
   .mission_section .right_container,
@@ -1853,10 +1882,8 @@ br {
   .ourgoals_section,
   .ourmanagement_section {
     flex-direction: column;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.9)
-      ),
+    background: linear-gradient(rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)),
       center / cover url("./img/common_background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1958,6 +1985,7 @@ br {
 }
 
 @media screen and (max-width: 768px) {
+
   *,
   :root,
   ::before,
@@ -2005,10 +2033,8 @@ br {
   .connect_section,
   .contact_section {
     flex-direction: column;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.9)
-      ),
+    background: linear-gradient(rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)),
       center / cover url("./img/common_background.png");
     background-repeat: no-repeat;
     gap: 4rem;
@@ -2087,10 +2113,8 @@ br {
   }
 
   .agenda_section {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.9)
-      ),
+    background: linear-gradient(rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)),
       center / cover url("./img/common_background.png");
     background-repeat: no-repeat;
     height: 100vh !important;
