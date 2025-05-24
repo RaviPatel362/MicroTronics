@@ -1363,11 +1363,7 @@ br {
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1370px) {
-  .common_video_container {
-    left: -90%;
-  }
-}
+
 
 @media screen and (max-width: 1390px) {
 
@@ -1391,6 +1387,12 @@ br {
 
   .detail_logo {
     width: 20px;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1370px) {
+  .common_video_container {
+    left: -90%;
   }
 }
 
