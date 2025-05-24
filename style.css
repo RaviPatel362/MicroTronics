@@ -312,6 +312,11 @@ html {
   letter-spacing: 1px;
 }
 
+.connect_section .connect_heading,
+.connect_section .connect_heading span {
+  font-size: 4rem;
+}
+
 br {
   display: inline;
 }
@@ -1433,12 +1438,16 @@ br {
   .contact_section .left_container {
     justify-content: flex-start;
     gap: 3rem;
-    margin-top: 3rem;
   }
 
   .connect_section,
   .contact_section {
     background-size: cover;
+  }
+
+  .connect_container {
+    width: 100%;
+    padding-left: 5rem;
   }
 
   .detail_container,
@@ -1657,6 +1666,20 @@ br {
 
   .right_container {
     height: 100%;
+  }
+
+  .connect_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .connect_heading,
+  .connect_heading span {
+    font-size: 4rem;
   }
 
   .contact_section .right_container,
@@ -2052,12 +2075,6 @@ br {
     width: 100%;
   }
 
-  .detail_container,
-  .connect_heading,
-  .contact_sub_heading {
-    width: auto;
-  }
-
   .connect_section,
   .contact_section {
     flex-direction: column;
@@ -2178,6 +2195,12 @@ br {
 @media screen and (max-width: 560px) {
   .section_container {
     padding: 1rem;
+  }
+
+  .detail_container,
+  .contact_section .connect_heading,
+  .contact_section .contact_sub_heading {
+    width: 100%;
   }
 
   .contact_section {
@@ -2301,6 +2324,12 @@ br {
   .aboutus_video_container {
     width: min(220px, 85vw);
     height: min(220px, 85vw);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .address_container {
+    flex-direction: column;
   }
 }
 
