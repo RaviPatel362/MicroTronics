@@ -1363,12 +1363,6 @@ br {
   }
 }
 
-@media screen and (max-width: 1440px) and (max-height: 720px) {
-  .common_video_container {
-    left: -110%;
-  }
-}
-
 @media screen and (max-width: 1390px) {
 
   .aboutus_section .left_container,
@@ -1378,6 +1372,11 @@ br {
 
   .common_video_container {
     left: -100%;
+  }
+
+  .vision_section .common_video_container,
+  .mission_section .common_video_container {
+    left: -90%;
   }
 
   .home_screen_logo {
