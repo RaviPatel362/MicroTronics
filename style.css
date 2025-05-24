@@ -1530,6 +1530,10 @@ br {
     top: 63%;
   }
 
+  .ourmanagement_section .common_video_container {
+    left: -135%;
+  }
+
   .mission_paragraph,
   .vision_paragraph {
     width: 350px;
@@ -1554,6 +1558,7 @@ br {
 
   .aboutus_section .left_container {
     min-height: 100% !important;
+    padding: 0;
   }
 
   .aboutus_section .right_container {
@@ -1562,14 +1567,17 @@ br {
 
   .aboutus_section .section_footer {
     position: relative;
-    padding: 6rem 0 2rem 0;
     justify-content: center;
+  }
+
+  .aboutus_section .section_footer a {
+    color: #000;
   }
 
   .aboutus_section .left_container,
   .aboutus_section .right_container {
     width: 100%;
-    padding: 2rem;
+    align-items: center;
   }
 
   .aboutus_section .right_container {
@@ -1583,6 +1591,23 @@ br {
 
   .aboutus_heading {
     text-align: center;
+  }
+
+  .aboutus_section .left_container .mission_paragraph,
+  .aboutus_section .right_container .mission_paragraph {
+    color: #000;
+    margin-right: 0;
+    width: 620px;
+    height: 100%;
+  }
+
+  .left_container .aboutus_heading {
+    color: var(--secondary-text-color);
+    width: 100%;
+  }
+
+  .left_container .aboutus_heading span {
+    color: var(--main-text-color);
   }
 
   .home_main_heading::before,
@@ -1828,22 +1853,6 @@ br {
     height: auto;
   }
 
-  .mission_point,
-  .vision_point,
-  .mission_img,
-  .vision_img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .mission_center_img {
-    max-width: 65%;
-  }
-
-  .vision_center_img {
-    max-width: 40%;
-  }
-
   .mission_right_heading_container,
   .vision_right_heading_container {
     justify-content: center;
@@ -1894,6 +1903,7 @@ br {
   .our_management_right_section {
     width: 100%;
     margin-bottom: 2.5rem;
+    justify-content: center;
   }
 
   .our_management_team_sec {
@@ -1901,6 +1911,7 @@ br {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-left: 0;
   }
 
   .ourgoals_section .section_footer,
@@ -2016,6 +2027,31 @@ br {
   .video_section {
     display: none;
   }
+
+  .ourgoals_section .left_container,
+  .ourmanagement_section .left_container {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .ourgoals_section .mission_paragraph,
+  .ourmanagement_section .mission_paragraph {
+    width: 250px;
+    text-align: center;
+  }
+
+  .team_details {
+    width: 150px;
+  }
+
+  .agenda_top_container {
+    height: 25%;
+  }
+
+  .agenda_bottom_container {
+    height: 75%;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -2067,10 +2103,6 @@ br {
   .our_goals_left_section,
   .ourmanagement_left_section {
     margin-left: 0;
-  }
-
-  .our_goals_section_div img {
-    width: 110px;
   }
 
   .our_goals_sec_details {
@@ -2196,6 +2228,38 @@ br {
     width: 100%;
     text-align: center;
   }
+
+  .agenda-main-title {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .agenda_pages_links {
+    flex-direction: row;
+    gap: 1.8rem;
+  }
+
+  .agenda_top_container {
+    height: 25%;
+    top: -10px;
+  }
+
+  .agenda_bottom_container {
+    height: 75%;
+  }
+
+  .section_container.agenda_section {
+    padding: 0;
+  }
+
+  .ourgoals_section {
+    padding: 0;
+  }
+
+  .ourgoals_section .section_footer {
+    position: absolute;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -2307,6 +2371,36 @@ br {
   .aboutus_video_container {
     width: min(300px, 85vw);
     height: min(300px, 85vw);
+  }
+
+  .agenda_top_container {
+    height: 30%;
+  }
+
+  .agenda_bottom_container {
+    height: 70%;
+  }
+
+  .agenda-main-title {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+  .agenda_footer {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .agenda_pages_links .links_col_1 ul,
+  .agenda_pages_links .links_col_2 ul {
+    gap: 2.65rem;
+  }
+
+  .agenda_pages_links {
+    flex-direction: column;
   }
 }
 
