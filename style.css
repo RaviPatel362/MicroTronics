@@ -1058,7 +1058,10 @@ br {
 .vision_section .left_container,
 .aboutus_section .left_container,
 .ourgoals_section .left_container,
-.ourmanagement_section .left_container {
+.ourmanagement_section .left_container,
+.expertise_section .left_container,
+.products_section .left_container,
+.services_section .left_container {
   position: relative;
   overflow: hidden;
 }
