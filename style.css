@@ -65,11 +65,6 @@ html {
 .connect_section .section_footer a,
 .contact_section .section_footer a {
   color: #000;
-}
-
-.market_section .section_footer a,
-.connect_section .section_footer a,
-.contact_section .section_footer a {
   text-shadow: none;
   font-weight: 400;
 }
@@ -2003,6 +1998,7 @@ br {
   .ourmanagement_section .section_footer a {
     color: #000;
     text-shadow: none;
+    font-weight: 400;
   }
 
   .ourgoals_section,
