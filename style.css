@@ -50,7 +50,7 @@ html {
 }
 
 .section_footer a:hover {
-    color: #000;
+  color: #000;
 }
 
 .section_footer img {
@@ -1649,6 +1649,7 @@ br {
     margin-right: 0;
     width: 620px;
     height: 100%;
+    line-height: 1.75;
   }
 
   .left_container .aboutus_heading {
@@ -1658,6 +1659,8 @@ br {
 
   .left_container .aboutus_heading span {
     color: var(--main-text-color);
+    text-shadow: none;
+    font-weight: 900;
   }
 
   .home_main_heading::before,
@@ -1710,30 +1713,33 @@ br {
     padding-left: 8rem;
   }
 
-  .services_heading,
-  .services_paragraph,
-  .services_heading span,
-  .products_heading,
-  .products_paragraph,
-  .products_heading span,
-  .expertise_heading,
-  .expertise_paragraph,
-  .expertise_heading span {
+  .left_container .services_heading,
+  .left_container .services_paragraph,
+  .left_container .services_heading span,
+  .left_container .products_heading,
+  .left_container .products_paragraph,
+  .left_container .products_heading span,
+  .left_container .expertise_heading,
+  .left_container .expertise_paragraph,
+  .left_container .expertise_heading span {
     color: var(--secondary-text-color);
     width: auto;
     white-space: unset;
     text-align: center;
+    text-shadow: none;
+    font-weight: 900;
   }
 
-  .services_paragraph,
-  .products_paragraph,
-  .expertise_paragraph {
+  .left_container .services_paragraph,
+  .left_container .products_paragraph,
+  .left_container .expertise_paragraph {
     color: #000;
+    font-weight: 400;
   }
 
-  .services_heading span,
-  .products_heading span,
-  .expertise_heading span {
+  .left_container .services_heading span,
+  .left_container .products_heading span,
+  .left_container .expertise_heading span {
     color: var(--main-text-color);
   }
 
@@ -1841,11 +1847,15 @@ br {
     color: var(--secondary-text-color);
     text-align: center;
     margin-right: 0;
+    text-shadow: none;
+    font-weight: 900;
   }
 
   .left_container .mission_heading span,
   .left_container .vision_heading span {
     color: var(--main-text-color);
+    text-shadow: none;
+    font-weight: 900;
   }
 
   .left_container .mission_paragraph,
@@ -1857,6 +1867,9 @@ br {
     width: 350px;
     max-width: 100%;
     margin-right: 0;
+    text-shadow: none;
+    font-weight: 400;
+    line-height: 1.75;
   }
 
   .right_container .vision_heading,
@@ -1987,6 +2000,7 @@ br {
   .ourgoals_section .section_footer a,
   .ourmanagement_section .section_footer a {
     color: #000;
+    text-shadow: none;
   }
 
   .ourgoals_section,
@@ -2024,12 +2038,14 @@ br {
     color: #000;
   }
 
-  .our_goals_heading,
-  .ourmanagement_heading {
+  .left_container .our_goals_heading,
+  .left_container .ourmanagement_heading {
     color: var(--secondary-text-color);
     width: auto;
     white-space: unset;
     text-align: center;
+    text-shadow: none;
+    font-weight: 900;
   }
 
   .our_goals_heading span,
@@ -2473,7 +2489,7 @@ br {
   }
 
   .aboutus_section .left_container {
-    padding: 2rem 1.5rem 1rem;
+    padding: 2rem 0 1rem;
   }
 
   .aboutus_heading {
