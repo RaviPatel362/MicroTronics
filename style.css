@@ -1689,6 +1689,8 @@ br {
   .section_footer a {
     color: #000;
     text-align: center;
+    text-shadow: none;
+    font-weight: 400;
   }
 
   .services_section,
