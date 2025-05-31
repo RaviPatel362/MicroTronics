@@ -1127,6 +1127,7 @@ br {
 .left_container .vision_heading span,
 .left_container .aboutus_heading,
 .left_container .aboutus_heading span,
+.left_container .our_goals_heading,
 .left_container .ourmanagement_heading,
 .left_container .expertise_heading,
 .left_container .expertise_heading span,
@@ -2124,6 +2125,19 @@ br {
 
   .agenda_bottom_container {
     height: 75%;
+  }
+
+  .mission_paragraph, 
+  .vision_paragraph, 
+  .market_paragraph, 
+  .aboutus_paragraph, 
+  .expertise_paragraph, 
+  .products_paragraph, 
+  .services_paragraph, 
+  .our_goals_paragraph, 
+  .ourmanagement_paragraph {
+    font-size: 2.8rem;
+    text-align: justify;
   }
 }
 
