@@ -8,8 +8,8 @@
   padding: 0;
   font-size: 10px;
   font-family: "Exo 2", sans-serif;
-  --main-text-color: #700021;
-  --secondary-text-color: #c2185b;
+  --main-text-color: #61010F;
+  --secondary-text-color: #940610;
   --white: #ffffff;
 }
 
@@ -132,36 +132,36 @@ html {
 }
 
 .home_main_heading {
+  width: 100%;
   margin: 0;
-  font-size: 4.5rem;
-  font-weight: 900;
-  position: relative;
-  padding: 2rem 0;
-  text-align: left;
-  line-height: 1.2;
-  background: linear-gradient(to right, #e9a72d 20%, #FFDC59 40%, #e9a72d 80%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fdf7f8;
+  white-space: nowrap;
+  animation: moveText 28s linear infinite;
+  will-change: transform;
+  transform: translateX(0%);
 }
 
-.home_main_heading::before,
-.home_main_heading::after {
-  content: "";
+@keyframes moveText {
+  0% {
+    transform: translateX(-35%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.home_section_footer {
+  width: 100%;
   position: absolute;
-  width: 150px;
-  height: 4px;
-  background: linear-gradient(to right, #e9a72d 30%, #FFDC59 50%, #e9a72d 70%);
-  left: 50%;
-  transform: translateX(-100%);
-}
-
-.home_main_heading::before {
-  top: 0;
-}
-
-.home_main_heading::after {
+  height: 50px;
+  display: flex;
   bottom: 0;
+  background: var(--main-text-color);
+  overflow: hidden;
+  align-items: center;
 }
 
 .home_heading {
@@ -430,7 +430,6 @@ br {
 .mission_point,
 .vision_point {
   width: 100px;
-  height: 100px;
   position: relative;
   display: flex;
   align-items: center;
@@ -578,7 +577,6 @@ br {
   width: 100%;
   height: 35%;
   position: relative;
-  opacity: 0.7;
 }
 
 .agenda_top_container .common_video {
@@ -2164,6 +2162,12 @@ br {
     font-size: 7px;
   }
 
+  .section_footer.agenda_footer {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+
   .section_container {
     background-size: cover;
   }
@@ -2474,7 +2478,7 @@ br {
 
   .agenda_pages_links .links_col_1 ul,
   .agenda_pages_links .links_col_2 ul {
-    gap: 2.65rem;
+    gap: 1.65rem;
   }
 
   .agenda_pages_links {
