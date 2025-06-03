@@ -83,6 +83,7 @@ html {
 }
 
 .video_section {
+  z-index: 1;
   width: 50%;
   overflow: hidden;
   display: flex;
@@ -136,7 +137,7 @@ html {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-  color: #fdf7f8;
+  color: #FEDE62;
   white-space: nowrap;
   animation: moveText 28s linear infinite;
   will-change: transform;
@@ -145,15 +146,16 @@ html {
 
 @keyframes moveText {
   0% {
-    transform: translateX(-35%);
+    transform: translateX(-20%);
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(80%);
   }
 }
 
 .home_section_footer {
+  margin-left: 30rem;
   width: 100%;
   position: absolute;
   height: 50px;
@@ -162,6 +164,7 @@ html {
   background: var(--main-text-color);
   overflow: hidden;
   align-items: center;
+  z-index: 0;
 }
 
 .home_heading {
