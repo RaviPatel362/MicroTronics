@@ -1156,7 +1156,7 @@ br {
   height: 100%;
   overflow: hidden;
   border-radius: 61px;
-  top: 300px;
+  top: 370px;
   right: -665px;
   transform: rotate(55deg) scale(1.5) translateY(-50%);
 }
@@ -1340,16 +1340,16 @@ br {
   .market_section .left_container {
     justify-content: center;
   }
-
-  .connect_video_container {
-    top: 350px;
-  }
 }
 
 
 
 @media screen and (max-width: 1390px) {
   .common_video_container {
+    left: -100%;
+  }
+
+  .ourmanagement_section .common_video_container {
     left: -100%;
   }
 
@@ -1409,7 +1409,7 @@ br {
   .building_container {
     width: 850px;
     height: 690px;
-    right: -60%;
+    right: -55%;
   }
 
   .common_video_container {
@@ -1422,7 +1422,7 @@ br {
   }
 
   .connect_video_container {
-    top: 250px;
+    top: 260px;
   }
 
   .home_screen_logo {
@@ -1512,7 +1512,11 @@ br {
   }
 
   .ourmanagement_section .common_video_container {
-    top: 60%;
+    left: -115%;
+  }
+
+  .ourmanagement_section .common_video_container {
+    top: 65%;
   }
 
 }
@@ -1537,7 +1541,11 @@ br {
   }
 
   .connect_video_container {
-    top: 200px;
+    top: 220px;
+  }
+
+  .building_container {
+    right: -60%;
   }
 }
 
@@ -1545,6 +1553,14 @@ br {
   .navbar-expand-lg .navbar-nav .nav-link {
     width: 100%;
     padding: 0.5rem !important;
+  }
+
+  .connect_video_container {
+    top: 195px;
+  }
+
+  .building_container {
+    right: -70%;
   }
 
   .common_video_container {
