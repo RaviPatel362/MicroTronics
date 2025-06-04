@@ -347,7 +347,6 @@ br {
   width: 620px;
   max-width: 100%;
   text-align: justify;
-  font-weight: 600;
   color: #000;
 }
 
@@ -362,8 +361,6 @@ br {
 }
 
 .aboutus_paragraph {
-  margin-left: 0;
-  width: 100%;
   line-height: 1.75;
 }
 
@@ -649,6 +646,7 @@ br {
 .aboutus_section .right_container {
   position: relative;
   height: 100vh;
+  align-items: flex-start;
 }
 
 .aboutus_paragraph_box {
@@ -659,7 +657,7 @@ br {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  padding-left: 2rem;
+  padding-left: 9rem;
 }
 
 /** expertise section style */
@@ -1117,7 +1115,6 @@ br {
   color: var(--white);
   text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.8),
     -1px -1px 3px rgba(0, 0, 0, 0.5);
-  font-weight: 600;
 }
 
 .contact_section .right_container,
@@ -1575,9 +1572,6 @@ br {
     padding: 0;
   }
 
-  .aboutus_section .right_container {
-    min-height: 100% !important;
-  }
 
   .aboutus_section .section_footer {
     position: relative;
@@ -1586,6 +1580,7 @@ br {
 
   .aboutus_section .section_footer a {
     color: #000;
+    text-shadow: none;
   }
 
   .aboutus_section .left_container,
@@ -1595,12 +1590,10 @@ br {
   }
 
   .aboutus_section .right_container {
-    padding: 4rem 0;
+    padding: 1rem 0;
     height: auto;
-  }
-
-  .aboutus_section .right_container {
     justify-content: flex-start;
+    min-height: 100% !important;
   }
 
   .aboutus_section .mission_right_heading_container {
@@ -1619,6 +1612,7 @@ br {
     width: 620px;
     height: 100%;
     line-height: 1.75;
+    text-shadow: none;
   }
 
   .left_container .aboutus_heading {
@@ -1632,6 +1626,12 @@ br {
     color: var(--main-text-color);
     text-shadow: none;
     font-weight: 900;
+  }
+}
+
+@media screen and (min-width:1099px) and (max-height:690px) {
+  .aboutus_section .common_video_container {
+    left: -100%;
   }
 }
 
@@ -2415,7 +2415,6 @@ br {
   .mission_right_heading_container,
   .vision_right_heading_container {
     justify-content: center;
-    margin-right: 4rem;
   }
 
   .aboutus_video_container {
@@ -2469,6 +2468,7 @@ br {
 
   .aboutus_heading {
     width: 100%;
+    font-size: 4rem;
   }
 
   .aboutus_video_container {
