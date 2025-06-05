@@ -1367,9 +1367,13 @@ br {
   }
 }
 
-@media screen and (max-width: 1370px) and (max-height:690px) {
+@media screen and (max-width: 1390px) and (max-height:690px) {
   .common_video_container {
     left: -90%;
+  }
+
+  .aboutus_section .common_video_container {
+    left: -95%;
   }
 
   .aboutus_section .common_video_container {
@@ -1660,9 +1664,9 @@ br {
   }
 }
 
-@media screen and (min-width:1099px) and (max-height:690px) {
+@media screen and (min-width:1099px) and (max-width:1160px) and (max-height:690px) {
   .aboutus_section .common_video_container {
-    left: -100%;
+    left: -105%;
   }
 }
 
