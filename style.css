@@ -114,7 +114,7 @@ html {
   position: absolute;
   z-index: 1;
   top: 160px;
-  left: 145px;
+  left: 160px;
   transform: translateY(-50%);
   transition: left 0.2s ease-in;
   animation: homeLogoWidth 0.5s ease-in;
@@ -370,7 +370,7 @@ br {
 }
 
 .aboutus_section .mission_paragraph {
-  height: 372px;
+  height: 423px;
 }
 
 .right_container {
@@ -1315,7 +1315,7 @@ br {
 
 @media screen and (min-width: 1560px) {
   .connect_video_container {
-    top: 430px;
+    top: 485px;
   }
 
   .common_video_container {
@@ -1328,7 +1328,18 @@ br {
   }
 
   .building_container {
-    width: 850px;
+    width: 1000px;
+    height: 950px;
+    right: -30%;
+  }
+
+  .building_img {
+    width: 110%;
+  }
+
+  .market_section .left_container {
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
@@ -1342,15 +1353,71 @@ br {
   }
 }
 
+@media screen and (max-width:1799.98px) {
+  .our_goals_right_section {
+    width: 50%;
+  }
+
+  .ourmanagement_section .common_video_container {
+    top: 55%;
+    left: -110%;
+  }
+
+  .building_container {
+    right: -35%;
+  }
+
+  .home_screen_logo {
+    left: 160px;
+  }
+}
+
+@media screen and (min-width:1599.98px) and (max-width:1699.98px) {
+  .common_video_container {
+    left: -120%;
+    top: 55%;
+  }
+
+  .section_footer {
+    bottom: 30px;
+  }
+
+  .agenda_footer {
+    bottom: 0;
+  }
+
+  .ourmanagement_section .common_video_container {
+    top: 65%;
+    left: -135%;
+  }
+
+  .connect_video_container {
+    top: 400px;
+  }
+
+  .building_container {
+    height: 870px;
+    right: -40%;
+  }
+
+  .home_heading_container_item {
+    gap: 2rem;
+  }
+
+  .home_screen_logo {
+    left: 145px;
+  }
+}
 
 
 @media screen and (max-width: 1390px) {
   .common_video_container {
-    left: -100%;
+    left: -105%;
   }
 
   .ourmanagement_section .common_video_container {
-    left: -100%;
+    top: 65%;
+    left: -117%;
   }
 
   .home_screen_logo {
@@ -1365,6 +1432,22 @@ br {
   .detail_logo {
     width: 20px;
   }
+
+  .home_screen_logo {
+    left: 135px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 1.4rem;
+  }
+
+  .connect_video_container {
+    top: 295px;
+  }
+
+  .building_container {
+    right: -45%;
+  }
 }
 
 @media screen and (max-width: 1390px) and (max-height:690px) {
@@ -1377,8 +1460,13 @@ br {
   }
 
   .aboutus_section .common_video_container {
+    left: -80%;
+    top: 45%;
+  }
+
+  .ourmanagement_section .common_video_container {
+    top: 55%;
     left: -95%;
-    top: 53%;
   }
 
   .market_section .left_container {
@@ -1398,6 +1486,18 @@ br {
     gap: 0.5rem;
     padding-top: 0.5rem;
     justify-content: flex-start;
+  }
+
+  .expertise_section .point_paragraph {
+    margin-bottom: 1.8rem;
+  }
+
+  .connect_video_container {
+    top: 315px;
+  }
+
+  .address_container{
+    margin-top: 10px;
   }
 }
 
@@ -1551,7 +1651,18 @@ br {
   .building_container {
     right: -60%;
   }
+
+  .home_screen_logo {
+    z-index: 1;
+    top: 130px;
+    left: 105px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 1.35rem;
+  }
 }
+
 
 @media screen and (max-width: 1099px) {
   .navbar-expand-lg .navbar-nav .nav-link {
