@@ -1056,9 +1056,6 @@ br {
 }
 
 .common_video_container {
-  background: linear-gradient(to right,
-      rgba(112, 0, 33, 1),
-      rgba(194, 24, 91, 1));
   position: absolute;
   top: 0;
   left: 0;
@@ -1315,7 +1312,11 @@ br {
 
 @media screen and (min-width: 1560px) {
   .connect_video_container {
-    top: 485px;
+    top: 440px;
+  }
+
+  .building_container {
+    right: -35%;
   }
 
   .common_video_container {
@@ -1496,7 +1497,7 @@ br {
     top: 315px;
   }
 
-  .address_container{
+  .address_container {
     margin-top: 10px;
   }
 }
