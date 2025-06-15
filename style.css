@@ -117,8 +117,8 @@ html {
   width: 190px;
   position: absolute;
   z-index: 1;
-  left: 42.5%;
-  top: 50%;
+  left: 42.6%;
+  top: 49%;
   transform: translateY(-50%) translateX(-50%);
   transition: left 0.2s ease-in;
   animation: homeLogoWidth 0.5s ease-in;
